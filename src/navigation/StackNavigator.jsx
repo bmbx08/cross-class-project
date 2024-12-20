@@ -22,7 +22,7 @@ const StackNavigator = () => {
   // }
 
   return (
-    <Stack.Navigator initialRouteName='Login'>
+    <Stack.Navigator initialRouteName='Diary'>
       <Stack.Screen name="Login" component={LoginScreen}/>
       <Stack.Screen name="Puzzle" component={PuzzleScreen}/>
       <Stack.Screen name="Menu" component={MenuScreen}/>
