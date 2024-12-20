@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TextInput } from 'react-native';
 
-const DiarySection = () => {
-    const [locations, setLocations] = useState('');
-    const [people, setPeople] = useState('');
-    const [purchasedItems, setPurchasedItems] = useState('');
-    const [expenses, setExpenses] = useState('');
-    const [news, setNews] = useState('');
-    const [plans, setPlans] = useState('');
-    const [importantTasks, setImportantTasks] = useState(Array(4).fill(''));
-
-    const handleTimeChange = (index, text) => {
-        const updatedTasks = [...importantTasks];
-        updatedTasks[index] = text;
-        setImportantTasks(updatedTasks);
-    };
-
+const DiarySection = ({
+    locations,
+    setLocations,
+    people,
+    setPeople,
+    purchasedItems,
+    setPurchasedItems,
+    expenses,
+    setExpenses,
+    news,
+    setNews,
+    plans,
+    setPlans,
+    importantTasks,
+    handleTimeChange,
+  }) => {
     return (
         <View style={styles.mainSection}>
             <View style={styles.row}>

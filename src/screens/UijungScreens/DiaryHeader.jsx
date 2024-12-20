@@ -10,7 +10,7 @@ const DiaryHeader = ({ selectedWeather, weatherIcons, handleWeatherSelect }) => 
         <TextInput style={styles.dateInput} placeholder="월" keyboardType="numeric" />
         <TextInput style={styles.dateInput} placeholder="일" keyboardType="numeric" />
         <TextInput style={styles.dateInput} placeholder="요일" />
-        <Text style={styles.dateLabel}>날씨</Text>
+        
       </View>
       <View style={styles.weatherIcons}>
         {weatherIcons.map((icon, index) => (
@@ -54,12 +54,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
     textAlign: 'center',
     backgroundColor: '#fff',
-  },
-  dateLabel: {
-    fontSize: 16,
-    fontWeight: '600',
-    marginLeft: 10,
-    color: '#555',
   },
   weatherIcons: {
     flexDirection: 'row',
